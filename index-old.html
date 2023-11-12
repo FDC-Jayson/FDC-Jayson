@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+
+    <!-- Open Graph meta tags for Facebook sharing -->
+    <meta property="og:title" content="l.l" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://uploads-ssl.webflow.com/5f3c19f18169b62a0d0bf387/60d33be8cf4ba7565123c8bc_YPD3ulQQAGQpOcnqIm3QzSTRgzmr1SexpW9ZjMpJ1mAnUxx4iF05XOTu44sk0qQG-8XgBcYmGZGAD-5SAZvJl3TjtmhgWnn-w0C2XKwhBscV78RVvhwZfyp0v_Pa6sNj5zxpOvRW.png" />
+    <meta property="og:url" content="https://fdc-jayson.github.io/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Optional: Specify the dimensions of the image -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+</head>
+<body>
+    <!-- Your website content goes here -->
+    <button onclick="shareOnFacebook()">Share on Facebook</button>
+
+    <!-- JavaScript function to open Facebook share dialog -->
+    <script>
+        function shareOnFacebook() {
+            // Construct the Facebook share URL
+            var shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href);
+
+            // Open a new window to the Facebook share dialog
+            window.open(shareUrl, 'Share on Facebook', 'width=600,height=400');
+        }
+    </script>
+
+    <!-- Example image tag -->
+    <img src="https://uploads-ssl.webflow.com/5f3c19f18169b62a0d0bf387/60d33be8cf4ba7565123c8bc_YPD3ulQQAGQpOcnqIm3QzSTRgzmr1SexpW9ZjMpJ1mAnUxx4iF05XOTu44sk0qQG-8XgBcYmGZGAD-5SAZvJl3TjtmhgWnn-w0C2XKwhBscV78RVvhwZfyp0v_Pa6sNj5zxpOvRW.png" alt="Image Alt Text">
+</body>
+</html>
